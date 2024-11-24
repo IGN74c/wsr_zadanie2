@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешествия.РУ Регистрация</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <header class="header column">
+        <div class="header__inner row">
+            <a href="/" class="header__title large">Путешествия.Ру</a>
+            <nav class="header__links row">
+                <a href="/" class="header__link normal">Главная</a>
+                <a href="./catalog.html" class="header__link normal">Каталог</a>
+                <div class="header__auth row">
+                    <a href="./login.html" class="header__auth-link button normal">Авторизация</a>
+                    <a href="./register.html" class="header__auth-link button blue normal">Регистрация</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="newsletter column h600">
+        <div class="newsletter__inner column">
+            <h2 class="newsletter__title large">Регистрация</h2>
+            <form method="post" class="newsletter__form column">
+                <input type="text" name="username" class="newsletter__email normal" placeholder="Логин"
+                    autocomplete="off">
+                <input type="text" name="email" class="newsletter__email normal" placeholder="Email"
+                    autocomplete="off">
+                <input type="password" name="password" class="newsletter__email normal" placeholder="Пароль"
+                    autocomplete="off">
+                <input type="password" name="password_complete" class="newsletter__email normal" placeholder="Подтвердите пароль"
+                    autocomplete="off">
+                <div class="newsletter__checkbox row">
+                    <input type="checkbox" required>
+                    <p class="newsletter__text normal gray">Даю согласие на обработку персональных данных</p>
+                </div>
+                <button class="newsletter__submit normal button light">Зарегистрироваться</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешествия.Ру</title>
+    <link rel="stylesheet" href="src/assets/css/style.css">
+</head>
+
+<body>
+    <header class="header column">
+        <div class="header__inner row">
+            <a href="/" class="header__title large">Путешествия.Ру</a>
+            <nav class="header__links row">
+                <a href="/" class="header__link normal">Главная</a>
+                <a href="src/views/catalog.html" class="header__link normal">Каталог</a>
+                <div class="header__auth row">
+                    <a href="src/views/login.html" class="header__auth-link button normal">Авторизация</a>
+                    <a href="src/views/register.html" class="header__auth-link button blue normal">Регистрация</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero column">
+        <div class="hero__inner column">
+            <h2 class="hero__title large">Откройте мир вместе с нами!</h2>
+            <p class="hero__subtitle normal">Выберите своё идеальное путешествие уже сегодня.</p>
+            <button class="button blue normal">Начать путешествие</button>
+        </div>
+    </section>
+
+    <section class="description column">
+        <pre class="description__text medium">
+Мы помогаем мечтам становиться реальностью.
+Наш сайт — это ваш гид по лучшим путешествиям по всему миру.
+Уникальные маршруты, доступные цены и безупречный сервис — 
+всё, что нужно для идеального отпуска!</pre>
+    </section>
+
+    <section class="destinations column">
+        <div class="destinations__inner column">
+            <h2 class="destinations__title large">Популярные направления <br>
+                для вашего путешествия</h2>
+            <div class="destinations__cards">
+                <div class="destinations__card column">
+                    <h3 class="destinations__card-title medium">Лучшие пляжи мира</h3>
+                    <button onclick="location.assign('/src/views/catalog.html')" class="destinations__card-button button light normal">Подробнее</button>
+                </div>
+                <div class="destinations__card column">
+                    <h3 class="destinations__card-title medium">Горные туры</h3>
+                    <button onclick="location.assign('/src/views/catalog.html')" class="destinations__card-button button light normal">Подробнее</button>
+                </div>
+                <div class="destinations__card column">
+                    <h3 class="destinations__card-title medium">Культурные маршруты</h3>
+                    <button onclick="location.assign('/src/views/catalog.html')" class="destinations__card-button button light normal">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter column">
+        <div class="newsletter__inner column">
+            <h2 class="newsletter__title large">Будьте первыми, кто узнает <br>
+                о лучших предложениях!</h2>
+            <form method="post" class="newsletter__form column">
+                <input type="text" name="eamil" class="newsletter__email normal" placeholder="Введите ваш email">
+                <button class="newsletter__submit normal button light">Подписаться</button>
+                <p class="newsletter__description normal gray">Мы не отправляем спам и бережно храним ваши данные.</p>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
